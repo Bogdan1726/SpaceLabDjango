@@ -1,0 +1,19 @@
+{% extends 'basic.html' %}
+
+{% block title %}
+{{ Celery }}
+{% endblock %}
+
+{% block content %}
+<div class="card-header">
+    Тест роботи Celery
+</div>
+<div class="card-body">
+    <h5 class="card-title"></h5>
+    <form method="post">
+        {% csrf_token %}
+        <p class="card-text">Нажмите кнопку Подписаться, чтобы получать новости проекта</p>
+        <button type="submit" class="btn btn-primary">Подписаться</button>
+    </form>
+</div>
+{% endblock %}
